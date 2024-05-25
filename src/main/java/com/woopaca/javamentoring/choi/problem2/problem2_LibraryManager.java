@@ -58,5 +58,4 @@ public class problem2_LibraryManager {
             }
         } while (true);
     }
-
 }

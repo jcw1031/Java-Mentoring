@@ -13,5 +13,4 @@ public class problem2_Magazine extends problem2_Item {
         super.display();
         System.out.println(", 발행 주기: " + month);
     }
-
 }
