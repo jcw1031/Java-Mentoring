@@ -1,15 +1,15 @@
 package com.woopaca.javamentoring.week3.problem3.level3;
 
-public class KakaoPayProcessor extends PaymentProcessor implements Discountable {
+class KakaoPay3 extends Payment3 implements Discountable {
 
-    public KakaoPayProcessor() {
+    public KakaoPay3() {
         super("카카오페이");
     }
 
     @Override
     public void pay(int paymentAmount) {
         System.out.printf("카카오페이로 %,d원을 결제합니다.\n", paymentAmount);
-        updatePaymentMetadata(paymentAmount);
+        updatePaymentInfo(paymentAmount);
     }
 
     @Override
@@ -19,4 +19,5 @@ public class KakaoPayProcessor extends PaymentProcessor implements Discountable 
         System.out.printf("할인 결제 금액은 %,d원입니다.\n", discountedPaymentAmount);
         return discountedPaymentAmount;
     }
+
 }

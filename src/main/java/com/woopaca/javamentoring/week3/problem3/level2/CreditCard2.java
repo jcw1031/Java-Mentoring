@@ -1,15 +1,15 @@
 package com.woopaca.javamentoring.week3.problem3.level2;
 
-public class CreditCardProcessor2 extends PaymentProcessor {
+class CreditCard2 extends Payment2 {
 
-    public CreditCardProcessor2() {
+    public CreditCard2() {
         super("신용카드");
     }
 
     @Override
     public void pay(int paymentAmount) {
         System.out.printf("신용카드로 %,d원을 결제합니다.\n", paymentAmount);
-        updatePaymentMetadata(paymentAmount);
+        updatePaymentInfo(paymentAmount);
     }
 
 }

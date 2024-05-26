@@ -14,21 +14,22 @@ public class PaymentSystem1 {
         // TODO 입력받은 결제 금액과 결제 방식을 통해 결제를 처리해봅시다! if문을 사용해도 좋고 switch 문을 사용해도 좋겠네요.
         switch (paymentMethod) {
             case 1: {
-                CreditCardProcessor1 creditCardProcessor = new CreditCardProcessor1();
-                creditCardProcessor.pay(paymentAmount);
-                creditCardProcessor.printReceipt();
+                CreditCard1 creditCard1 = new CreditCard1();
+                creditCard1.pay(paymentAmount);
+                creditCard1.printReceipt();
                 break;
             }
             case 2: {
-                KakaoPayProcessor1 kakaoPayProcessor = new KakaoPayProcessor1();
-                kakaoPayProcessor.pay(paymentAmount);
-                kakaoPayProcessor.printReceipt();
+                KakaoPay1 kakaoPay1 = new KakaoPay1();
+                kakaoPay1.pay(paymentAmount);
+                kakaoPay1.printReceipt();
                 break;
             }
             case 3: {
-                NaverPayProcessor1 naverPayProcessor = new NaverPayProcessor1();
-                naverPayProcessor.pay(paymentAmount);
-                naverPayProcessor.printReceipt();
+                NaverPay1 naverPay1 = new NaverPay1();
+                naverPay1.pay(paymentAmount);
+                naverPay1.printReceipt();
+                break;
             }
         }
     }

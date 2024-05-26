@@ -1,15 +1,15 @@
 package com.woopaca.javamentoring.week3.problem3.level3;
 
-public class NaverPayProcessor extends PaymentProcessor implements Discountable {
+class NaverPay3 extends Payment3 implements Discountable {
 
-    public NaverPayProcessor() {
+    public NaverPay3() {
         super("네이버페이");
     }
 
     @Override
     public void pay(int paymentAmount) {
         System.out.printf("네이버페이로 %,d원을 결제합니다.\n", paymentAmount);
-        updatePaymentMetadata(paymentAmount);
+        updatePaymentInfo(paymentAmount);
     }
 
     @Override
@@ -19,4 +19,5 @@ public class NaverPayProcessor extends PaymentProcessor implements Discountable 
         System.out.printf("할인된 결제 금액은 %,d원입니다.\n", discountedPaymentAmount);
         return discountedPaymentAmount;
     }
+
 }
