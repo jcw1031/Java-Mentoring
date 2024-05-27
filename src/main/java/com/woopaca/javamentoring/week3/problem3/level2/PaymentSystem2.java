@@ -31,6 +31,17 @@ public class PaymentSystem2 {
             }
         }
         return null;
+
+        /* JAVA 12 이상을 사용한다면 아래와 같이 작성할 수 있습니다.
+
+            return switch (paymentMethod) {
+                case 1 -> new CreditCard2();
+                case 2 -> new KakaoPay2();
+                case 3 -> new NaverPay2();
+                default -> null;
+            };
+
+         */
     }
 
 }
