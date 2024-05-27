@@ -17,10 +17,10 @@ public class PaymentSystem3 {
         }
         /* Java 14 이상을 사용한다면 아래와 같이 작성할 수 있습니다.
 
-            Payment3 payment = determinePaymentMethod(paymentMethod);
-            if (payment instanceof Discountable discountablePayment) {
-                paymentAmount = discountablePayment.discount(paymentAmount);
-            }
+        Payment3 payment = determinePaymentMethod(paymentMethod);
+        if (payment instanceof Discountable discountablePayment) {
+            paymentAmount = discountablePayment.discount(paymentAmount);
+        }
 
          */
 
